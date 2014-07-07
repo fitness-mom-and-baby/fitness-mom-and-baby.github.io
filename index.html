@@ -1,0 +1,318 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Фитнес "Мама и Малыш"</title>
+    <meta charset="utf-8">
+    <meta name="description" content="фитнес, мама и малыш, фитнес мама и малыш ярославль, Фитнес Мама и Малыш теперь и в Ярославле запись открыта" >
+    <meta name="keywords" content="фитнес, аэробика, гимнастика, упражнения, похудеть, ребенок, родители, мама, диета, 8 марта, подарок, беременность, малыш, спортзал, пилатес, стречинг, йога" >
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.equalheights.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+        // Slider
+            jQuery('#camera_wrap').camera({
+                loader: false,
+                pagination: true,
+                minHeight: '250',
+                thumbnails: false,
+                height: '80.9%',
+                caption: true,
+                navigation: false,
+                fx: 'scrollLeft'
+            });
+
+        // Сarousel
+            var owl = $("#owl"); 
+
+            owl.owlCarousel({
+                items : 1, //10 items above 1000px browser width
+                itemsDesktop : [995,1], //5 items between 1000px and 901px
+                itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+                itemsTablet: [700, 1], //2 items between 600 and 0
+                itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+                navigation : true,
+                pagination :  false
+            });
+
+    	// Back to Top
+          	$().UItoTop({ easingType: 'easeOutQuart' });
+         });
+         
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark1,
+            myPlacemark2,
+            myPlacemark3;
+
+        function init(){     
+            myMap = new ymaps.Map ("map", {
+                center: [57.623, 39.890],
+                zoom: 10
+            });
+            
+            myPlacemark1 = new ymaps.Placemark([57.687379, 39.765005], { 
+                hintContent: 'ФК "Округ"', 
+                balloonContent: 'ФК "Округ" - ул. Труфанова, 28' 
+            });
+            
+            myPlacemark2 = new ymaps.Placemark([57.551931, 39.936377], { 
+                hintContent: 'ФК "Fly Step"', 
+                balloonContent: 'ФК "Fly Step" - Индустриальный пер., 6' 
+            });
+            
+            myPlacemark3 = new ymaps.Placemark([57.622884, 39.889994], { 
+                hintContent: 'ГК "Алеша Попович"', 
+                balloonContent: 'ГК "Алеша Попович" - ул. Первомайская, 55' 
+            });
+            
+            myMap.behaviors.enable('scrollZoom');
+
+            myMap.geoObjects.add(myPlacemark1);
+            myMap.geoObjects.add(myPlacemark2);
+            myMap.geoObjects.add(myPlacemark3);
+        };
+    </script>
+    <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+<body>
+
+<!--==============================header=================================-->
+<header id="header" style="background-color: white;">
+    <section class="block block5">
+        <div class="container_12">
+            <div class="grid_12">
+                <div id="header-title">
+                    <div style="float: right;">
+                        <address style="display: table-caption;
+                                        width: 260px;
+                                        border: none;
+                                        text-align: center;
+                                        background-color: #f9f9f9;
+                                        padding-top: 8px;
+                                        padding-bottom: 15px;
+                                        border-bottom-left-radius: 25px;
+                                        border-bottom-right-radius: 25px;" >
+                            <span class="p3">Фитнес "Мама и Малыш"</span>
+                            <span class="p4">8(920) 123 00 86</span>
+                            <a href="http://vk.com/mum_and_baby"><span>http://vk.com/mum_and_baby</span></a>
+                        </address>
+                    </div>
+                </div>
+     
+        </div>
+        </div>                    
+    </section>
+    <div class="container_12" style="padding-top: 42px; padding-bottom: 30px;">
+        <div class="grid_5"  >
+        <div id="wb_YouTube1">
+            <iframe width="400" height="360" src="http://www.youtube.com/embed/yFPmg1-tkzk?rel=1&amp;version=3&amp;autohide=0&amp;theme=dark" frameborder="0">
+            </iframe>
+        </div>
+        </div>
+        <div class="grid_7">
+            <div style="float: right; margin-right: -60px;">
+                <img src="images/fitness-mom.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!--===================content====================-->
+
+<div id="content">
+    <section class="top">
+        <div class="container_12">
+            <div style="text-align: center; padding-bottom: 100px;">
+                <h2 style="padding-top: 8px; color: #f26b5d;" >Выберете один из наших подарков на 8 марта!</h2>
+            </div>
+            <section class="block1">
+                <div class="grid_4">
+                    <article class="maxheight">
+                        <div class='box_inner'>
+                            <div class="icon1">
+                                <img src="images/icon1.png" alt="">
+                            </div>
+                            <h2 class="marg7">Первое занятие бесплатно!</h2>
+                            <!--<p class="p8">Use the mind<br>to control the muscles</p>-->
+                            <p class="marg1">Не откладывайте "до понедельника".<br> Запишитесь на занятия прямо сейчас!</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="grid_4">
+                    <article class="maxheight">
+                        <div class='box_inner'>
+                            <div class="icon2">
+                                <img src="images/icon1.png" alt="">
+                            </div>
+                            <h2 class="marg5">Абонемент на 8 занятий по супер цене!</h2>
+                            <p class="marg6">Стоимость абонимента <br>на 8 занятий <span style="text-decoration: line-through;">2000</span>
+                            <span class="p8"> 1199</span> руб.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="grid_4">
+                    <article class="maxheight">
+                        <div class='box_inner'>
+                            <div class="icon3">
+                                <img src="images/icon1.png" alt="">
+                            </div>
+                            <h2 class="marg7">Массаж за наш счет!</h2>
+                            <p class="marg8">Разовое посещение массажного салона после тренировки.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    	</div> 
+    </section>
+
+    <div class="container_12">
+        <div class="grid_6">
+            <div class="text_hr1"><h3 class="text1"></h3></div>
+            <div class="grid_3 alpha">
+                <h4>Фитнес "Мама и Малыш" теперь и в Ярославле. Запись открыта!</h4>
+                <!--<time datetime="2013-10-14">2013, Oct 14</time>-->
+                <p class="pad1 marg1">Ждем Вас на занятия в группы от 8 мес до 1,5 лет; от 1,5 лет и старше. 
+Во время упражнений малыши находятся в постоянном контакте с мамой и воспринимают занятия как игру.</p>
+                <p class="marg9"> </p>
+                <div class="p6 color1 marg6"><a href="http://vk.com/mum_and_baby">Подробнее</a></div>
+            </div>
+            <div class="grid_3 omega">
+                <h4>Занятия прежде всего расчитаны для мам. </h4>
+                <p class="pad1 marg1">В программе используются элементы аэробики, пилатеса, стречинга и йоги. Основное внимание уделяется прессу, ягодичным мышцам, бедрам. Много внимания уделяется растяжке для разгрузки уставших мышщ спины и ног.</p>
+                <p class="marg9">Занятия проводит тренер по фитнесу с большим опытом <a href="http://vk.com/id224189458" class="color1">Марина</a>.</p>
+                <!--<div class="p6 color1 marg6"><a href="#">more info</a></div>-->
+            </div>
+        </div>
+        <div class="grid_6">
+            <div class="text_hr1"><h3 class="text1 marg4">Галерея</h3></div>
+            <div id="owl" class="clearfix">
+                <div class="item">
+                    <img src="images/1.jpg" alt="">
+                    <div class="text2 p16"><span></span></div>
+                </div>
+                <div class="item">
+                    <img src="images/2.jpg" alt="">
+                    <div class="text2 p16"><span></span></div>
+                </div>
+                <div class="item">
+                    <img src="images/3.jpg" alt="">
+                    <div class="text2 p16"><span></span></div>
+                </div>
+                <div class="item">
+                    <img src="images/4.jpg" alt="">
+                    <div class="text2 p16"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_12">
+    <div class="grid_12">
+        <div class="text_hr1"><h3 class="text1">Отзывы</h3></div>
+            <div class="grid_12 alpha review-text">
+                <h5><span class="review-ico rv-1"></span>Полина Мутовкина</h5>
+                <!--<time datetime="2013-10-14">2013, Oct 14</time>-->
+                <p class="pad1 marg1">Моему карапузу недавно исполнился годик, ходим уже второй месяц. Очень довольны -оба))). Мне очень нравится, что уделяется внимание именно самым проблемным местам, особенно после родов, а малыш в восторге от зеркал и новых игрушек новых друзей. Очень доброжелательная и теплая обстановка, за что отдельное спасибо Марине.</p>
+                <time datetime="2014-02-11">11 фев 2014</time>
+            </div>
+            <div class="grid_12 omega review-text">
+                <h5 class="r-pos">Лена Лашина<span class="review-ico rv-2"></span></h5>
+                <p class="pad1 marg1">Мы были на занятии у Марины. Ребёнку 9 месяцев. Никогда раньше не слышала, чтобы дочка ТАААААК восторженно верещала, честное слово! Это было потрясающе. Половину занятия она смеялась, повизгивала, улыбалась во весь рот) другая половина занятия, правда, прошла в упорном любовании себя в большое зеркало)) В общем, было очень весело и интересно!
+Из пожеланий разве что нашему тренеру тоже было бы неплохо показывать упражнения на своём ребенке)</p>
+                <time datetime="2014-01-12" class="r-pos">12 янв 2014</time>
+            </div>
+    </div>
+    <div class="grid_12">
+            <div class="grid_12 alpha review-text">
+                <h5><span class="review-ico rv-3"></span>Наталья Плетнева</h5>
+                <p class="pad1 marg1">Я хожу на занятия с двумя дочками, тренировки нравятся и им и мне. На занятиях есть и танцевальные элементы, и фитнес, все как я люблю. Для детей полная свобода: моя годовалая дочка общается со сверстниками, танцует под музыку, помогает маме делать упражнения.</p>
+                <time datetime="2014-01-24">24 янв 2014</time>
+            </div>
+            <div class="grid_12 omega review-text">
+                <h5 class="r-pos">Зоя Шильникова<span class="review-ico rv-4"></span></h5>
+                <p class="pad1 marg1">У меня трое детей и мы все вместе ходим на занятия. Ребятам очень нравится- играют, веселятся, да еще и когда упражнения с ними, то довольны "по уши". Для меня же очень хорошая нагрузка, мышцы ноют потом еще два дня. В общем, я довольна. Рекомендую. Спасибо Марине!</p>
+                <time datetime="2014-01-26" class="r-pos">26 янв 2014</time>
+            </div>
+    </div>
+</div>        
+<section class="bg_block" style="height: 500px;">
+    <div class="container_12">
+    
+        <div class="grid_6">
+            <div style="padding-top: 45px;">
+                <div id="map" style="width: 460px; height: 400px"></div>
+            </div>
+        </div>
+        <div class="grid_6">
+            <div style="padding-top: 45px;">
+                <h4>Места проведения занятий</h4>
+                <ul>
+                    <li><h5 class="pad1 marg1">1. ФК "Округ" - ул. Труфанова, 28</h5>
+                        <p class="pad-left marg1">понедельник и четверг с 10:00 до 11:00</p>
+                    </li>
+                    <li><h5 class="pad1 marg1">2. ФК "Fly Step" - Индустриальный пер., 6</h5>
+                        <p class="pad-left marg1"> вторник и пятница с 10:00 до 11:00; с 11:00 до 12:00 </p>
+                    </li>
+                    <li><h5 class="pad1 marg1">3. ГК "Алеша Попович" - ул. Первомайская, 55</h5>
+                        <p class="pad-left marg1">среда, суббота, воскресенье,  с 10:00 до 11:00; с 11:00 до 12:00</p>
+                    </li>
+                </ul>
+                <!--<p class="pad1 marg1">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.</p>
+                <p class="marg9">Nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>-->
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+<!--===================footer=====================-->
+
+<footer>
+    <div class="container_12">
+        <div class="grid_12">
+            <address>
+                <span class="p3">Фитнес "Мама и Малыш"</span>
+                <span class="p4">8(920) 123 00 86</span>
+                <a href="http://vk.com/mum_and_baby"><span>http://vk.com/mum_and_baby</span></a>
+            </address>
+            <div class="socials marg3">
+            <!--<a href="#"><span class="fa-twitter fa"></span></a>
+                <a href="#"><span class="fa-google-plus fa"></span></a>-->
+                <a href="http://vk.com/mum_and_baby"><span class="fa-vk-img fa"></span></a>
+                <a href="https://www.facebook.com/groups/273883782761029/"><span class="fa-facebook-img fa"></span></a>
+            </div>
+            <p class="privacy marg2">Фитнес "Мама и Малыш" &copy; г.Ярославль <span id="copyright-year"></span></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+#owl, #owl2 {
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	padding-bottom: 10px;
+}
+#owl2 {
+	padding-bottom: 16px;
+	margin-bottom: 8px;
+}
+
+#owl .owl-item, #owl2 .owl-item {
+	float: left;
+}
+
+#owl .item, #owl2 .item {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 2px;
+	text-align: center;
+}
+#owl2 .item {
+	text-align: left;
+}
+
+.item>div{
+	padding: 8px 0 0 0;
+}
+
+#owl .item .count, #owl2 .item .count {
+	color: #e3e3e3;
+	letter-spacing: -1px;
+	margin-bottom: 24px;
+	padding-top: 32px;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	font: bold  40px/40px 'Roboto', sans-serif;
+}
+
+#owl .item:hover .count, #owl2 .item:hover .count {
+	color: #ff6f53;
+}
+
+#owl .item .tx, #owl2 .item .tx  {
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	min-height: 60px;
+	padding-right: 5px;
+}
+
+#owl .item a.btn, #owl2 .item a.btn {
+	margin-top: 23px;
+}
+
+.owl-wrapper-outer {
+	overflow: hidden;
+}
+
+#owl .owl-prev, #owl .owl-next, #owl2 .owl-prev, #owl2 .owl-next {
+	cursor: pointer;
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	display: block;
+	height: 36px;
+	bottom: 0;
+	width: 36px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+#owl .owl-prev, #owl .owl-next{
+	float: left;
+}
+#owl2 .owl-prev, #owl2 .owl-next{
+	right: 0;
+	float: left;
+}
+#owl2 .owl-prev{
+	right: 38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#owl .owl-prev:hover, #owl2 .owl-prev:hover {
+	background-position: 0 bottom;
+}
+
+#owl .owl-next:hover, #owl2 .owl-next:hover {
+	background-position: right bottom;
+}
+
+#owl .owl-next, #owl2 .owl-next{
+	margin-left: 1px;
+	background-position: right 0;
+}
+.owl-buttons{
+	display: inline-block;
+}
+#owl2 .owl-buttons{
+	float: right;
+}
+/* Owl content */
+
+.owl-carousel .owl-wrapper{
+	display: block;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-perspective: 1000;
+}
+#owl .owl-controls{
+	padding-top: 5px;
+}
+
+.owl-pagination{
+	padding-top: 6px;
+	text-align: center;
+}
+.owl-controls{
+	text-align: center;
+}
+.owl-page{
+	display: inline-block;
+	background: url(../images/pagination.png) no-repeat;
+	width: 10px;
+	height: 11px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+.owl-page+.owl-page{
+	margin-left: 4px;
+}
+.owl-page:hover{
+	background-position: right 0;
+}
+.owl-page.active{
+	background-position: right 0;
+}
